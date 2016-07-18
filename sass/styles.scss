@@ -4,7 +4,7 @@
 .row {
 	margin: 0px;
 }
- 
+
 body {
 	max-width: 720px;
 	width: auto;
@@ -213,57 +213,54 @@ body {
 						margin-right: 20px;
 					}
 				}
-				> div {
-					> .main__content__dialog__message {
-						padding: 10px;
-						> .main__content__dialog__message__name {
-							> span {
-								font-size: 0.875em;
-								font-weight: bold;
-								margin-right: 10px;
-							}
-							display: inline-block;
+				> .main__content__dialog__message {
+					padding: 10px;
+					> .main__content__dialog__message__name {
+						> span {
+							font-size: 0.875em;
+							font-weight: bold;
+							margin-right: 10px;
 						}
-						> .main__content__dialog__message__date {
-							> span {
-								font-size: 0.6875em;
-								color: $ant_font_light;
-							}
-							display: inline-block;
+						display: inline-block;
+					}
+					> .main__content__dialog__message__date {
+						> span {
+							font-size: 0.6875em;
+							color: $ant_font_light;
 						}
-						> .main__content__dialog__message__msg {
-							margin-top: 15px;
-							width: 100%;
-							border: 1px solid #cfcfcf;
-							padding: 15px;
-							background-color: $light-light_blue;
-							position: relative;
-							&::before {
-								content: "";
-								width: 0;
-								height: 0;
-								border-bottom: 11px solid $light-light_blue; 
-								border-right: 11px solid transparent;
-								top: -11px;
-								left: 16px;
-								position: absolute;	
-								z-index: 8;
-							}
-							&::after {
-								content: "";
-								width: 0;
-								height: 0;
-								border-bottom: 14px solid #cfcfcf; 
-								border-right: 14px solid transparent;
-								top: -14px;
-								left: 15px;
-								position: absolute;	
-								z-index: 7;
-							}
+						display: inline-block;
+					}
+					> .main__content__dialog__message__msg {
+						margin-top: 15px;
+						width: 100%;
+						border: 1px solid #cfcfcf;
+						padding: 15px;
+						background-color: $light-light_blue;
+						position: relative;
+						&::before {
+							content: "";
+							width: 0;
+							height: 0;
+							border-bottom: 11px solid $light-light_blue; 
+							border-right: 11px solid transparent;
+							top: -11px;
+							left: 16px;
+							position: absolute;	
+							z-index: 8;
+						}
+						&::after {
+							content: "";
+							width: 0;
+							height: 0;
+							border-bottom: 14px solid #cfcfcf; 
+							border-right: 14px solid transparent;
+							top: -14px;
+							left: 15px;
+							position: absolute;	
+							z-index: 7;
 						}
 					}
 				}
-				
 			}
 		}
 	}
@@ -277,7 +274,7 @@ body {
 				height: 65px;
 				border-radius: 3px;
 				border: 1px solid #a9a9a9;
-				padding: 5px 15px;
+				padding: 5px;
 			}
 			> .footer__content__button {
 				width: 280px;
