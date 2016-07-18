@@ -169,27 +169,27 @@ body {
           font-size: 0.75em; }
         body main > .main__content > .main__content__dialog > .main__content__dialog__header > .num_msg {
           margin-right: 20px; }
-      body main > .main__content > .main__content__dialog > div > .main__content__dialog__message {
+      body main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message {
         padding: 10px; }
-        body main > .main__content > .main__content__dialog > div > .main__content__dialog__message > .main__content__dialog__message__name {
+        body main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__name {
           display: inline-block; }
-          body main > .main__content > .main__content__dialog > div > .main__content__dialog__message > .main__content__dialog__message__name > span {
+          body main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__name > span {
             font-size: 0.875em;
             font-weight: bold;
             margin-right: 10px; }
-        body main > .main__content > .main__content__dialog > div > .main__content__dialog__message > .main__content__dialog__message__date {
+        body main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__date {
           display: inline-block; }
-          body main > .main__content > .main__content__dialog > div > .main__content__dialog__message > .main__content__dialog__message__date > span {
+          body main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__date > span {
             font-size: 0.6875em;
             color: #808080; }
-        body main > .main__content > .main__content__dialog > div > .main__content__dialog__message > .main__content__dialog__message__msg {
+        body main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__msg {
           margin-top: 15px;
           width: 100%;
           border: 1px solid #cfcfcf;
           padding: 15px;
           background-color: #f2fbff;
           position: relative; }
-          body main > .main__content > .main__content__dialog > div > .main__content__dialog__message > .main__content__dialog__message__msg::before {
+          body main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__msg::before {
             content: "";
             width: 0;
             height: 0;
@@ -199,7 +199,7 @@ body {
             left: 16px;
             position: absolute;
             z-index: 8; }
-          body main > .main__content > .main__content__dialog > div > .main__content__dialog__message > .main__content__dialog__message__msg::after {
+          body main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__msg::after {
             content: "";
             width: 0;
             height: 0;
@@ -236,3 +236,51 @@ body {
         background-color: #24b011;
         -webkit-transition: 0.4s;
                 transition: 0.4s; }
+  body .login-popup {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0px;
+    z-index: 15; }
+    body .login-popup > .login-popup__frame {
+      width: auto;
+      margin: auto;
+      background-color: white;
+      width: 80%;
+      position: relative;
+      top: 30%;
+      padding: 0 15px; }
+      body .login-popup > .login-popup__frame > form > p {
+        font-size: 1.5em;
+        color: black;
+        display: block;
+        text-align: center;
+        padding: 10px; }
+      body .login-popup > .login-popup__frame > form > h5 {
+        color: red;
+        margin: 0px; }
+      body .login-popup > .login-popup__frame > form > #your-name {
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+        color: green;
+        display: block;
+        text-align: center; }
+      body .login-popup > .login-popup__frame > form > #lets-chat {
+        width: 100px;
+        height: 40px;
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+        background-color: #282c37;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border: 0px;
+        outline: 0px; }
+
+.close-popup {
+  display: none; }

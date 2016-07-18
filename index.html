@@ -73,6 +73,9 @@
 					<span class="num_msg">131</span>
 					<img src="img/love.png">
 				</div>
+				<div id="dialog__space">
+					
+				</div>
 				<!--<div>
 					<div class="main__content__dialog__message">
 						<div class="main__content__dialog__message__name">
@@ -96,5 +99,17 @@
 			<input type="button" name="field" class="footer__content__button" value="Написать консультанту" onclick="AddMessage()" hotkey='Ctrl + Enter'>
 		</div>
 	</footer>
+
+	<div class="login-popup" >
+		<div class="login-popup__frame row">
+			<form>
+				<p>Log in</p>
+				<h5>Name*</h5>
+				<input id="your-name" type="text" autofocus required pattern="^[a-zA-Z]+$" placeholder="Name in english">
+				<input id="lets-chat" type="button" value="SUBMIT" onclick="AddNewUser()">
+			</form>
+		</div>
+	</div>
+
 </body>
 </html>

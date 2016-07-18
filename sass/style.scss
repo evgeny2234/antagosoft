@@ -213,7 +213,7 @@ body {
 						margin-right: 20px;
 					}
 				}
-				> div {
+				> #dialog__space {
 					> .main__content__dialog__message {
 						padding: 10px;
 						> .main__content__dialog__message__name {
@@ -298,4 +298,61 @@ body {
 			}
 		}
 	}
+	.login-popup {
+		width: 100%;
+		max-width: 720px;
+		margin: auto;
+		height: 100vh;
+		background-color: rgba(0,0,0,.7);
+		position: absolute;
+		top: 0px;
+		z-index: 15;
+		> .login-popup__frame {
+			width: auto;
+			margin: auto;
+			background-color: white;
+			width: 80%;
+			position: relative;
+			top: 30%;
+			padding: 0 15px;
+			> form {
+				> p {
+				font-size: 1.5em;
+				color: black;;
+				display: block;
+				text-align: center;
+				padding: 10px;
+				}
+				> h5 {
+					color: red;
+					margin: 0px;
+				}
+				> #your-name {
+					width: 100%;
+					padding: 10px;
+					margin: 10px auto;
+					color: green;
+					display: block;
+					text-align: center;
+				}
+				> #lets-chat {
+					width: 100px;
+					height: 40px;
+					margin: 10px auto;
+					display: block;
+					text-align: center;
+					background-color: #282c37;
+					color: white;
+					font-weight: bold;
+					letter-spacing: 2px;
+					border: 0px;
+					outline: 0px;
+				}
+			}
+		}	
+	}
+}
+
+.close-popup {
+	display: none;
 }
